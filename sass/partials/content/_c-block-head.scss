@@ -1,0 +1,77 @@
+
+/* =================================================================== */
+/* c-block-head */
+/* =================================================================== */
+
+
+.c-block-head{
+	min-height: 50px;
+	padding: 4px 10px 3px 12px;
+	display: flex;
+	justify-content: space-between;
+	background: var(--clr-back);
+	border-radius: 5px 5px 0 0;
+
+	&.no-bg{
+		background: transparent;
+	}
+
+	&__left{
+		position: relative;
+		margin: 0 auto 0 0;
+		padding: 5px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	&__right{
+		margin: 0 0 0 10px;
+		display: flex;
+	}
+
+	&__title{
+		font-size: 16px;
+		margin: 0;
+		color: var(--clr-text);
+		font-weight: 700;
+
+		span{
+			font-size: 14px;
+		}
+
+		&.btn{
+			cursor: pointer;
+		}
+	}
+
+	&__title-arrow{
+		position: relative;
+		margin: 0 2px 0 6px;
+		width: 8px;
+		height: 7px;
+		fill: var(--clr-accentD);
+	}
+
+	&__btn{
+		width: 48px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all .1s;
+		border: none;
+		background: transparent;
+
+		&:hover{
+			background: rgba(0, 0, 0, 0.05);
+		}
+
+		.sprite-icon{
+			width: 20px;
+			height: 20px;
+			fill: var(--clr-text);
+		}
+	}
+}
