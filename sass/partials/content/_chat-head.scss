@@ -1,0 +1,149 @@
+
+/* =================================================================== */
+/* chat-head */
+/* =================================================================== */
+
+
+.chat-head{
+	position: relative;
+	display: flex;
+	padding: 4px 10px 4px 12px;
+	height: 60px;
+	align-items: center;
+	background: var(--clr-block);
+	border-bottom: 1px solid var(--clr-separator);
+
+	&__back{
+		position: relative;
+		display: flex;
+		width: 32px;
+		height: 100%;
+		margin: 0 14px 0 0;
+		border: none;
+		border-radius: 3px;
+		transition: all 0.1s;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		background: transparent;
+
+		.sprite-icon{
+			display: block;
+			width: 14px;
+			height: 24px;
+			fill: var(--clr-accentD);
+		}
+	}
+
+	/*&__avatar-wrap{
+		position: relative;
+		width: 32px;
+		height: 32px;
+		margin: 0 0;
+		flex: 0 0 auto;
+	}
+
+	&__avatar{
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+	}*/
+
+	&__curr{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		margin: 0 14px 0 0;
+		flex: 0 0 32px;
+		display: none;
+	}
+
+	&__desc{
+		padding: 0 8px 0 0;
+		overflow: hidden;
+		min-width: 100px;
+		flex: 1 1 auto;
+	}
+
+	&__name{
+		margin: 1px 0 0;
+		font-size: 12px;
+		font-weight: 700;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		// color: var(--clr-textD);
+		color: rgb(247, 147, 48);
+	}
+
+	&__info{
+		font-size: 11px;
+		margin: 0 0 0;
+		color: var(--clr-textD);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__btns{
+		display: flex;
+		text-align: right;
+		margin: 0 0 0 auto;
+		padding: 0 0;
+		flex: 0 0 auto;
+		align-items: flex-start;
+	}
+
+	&__btn{
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: 0 0 0 2px;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		border: none;
+		border-radius: 3px;
+		background: transparent;
+		border: 1px solid transparent;
+		cursor: pointer;
+		transition: all .1s;
+
+		&:hover{
+			border-color: var(--clr-accentD);
+			background: var(--clr-accentD);
+			color: #fff;
+
+			.sprite-icon{
+				fill: #fff;
+			}
+		}
+
+		.sprite-icon{
+			position: relative;
+			width: 18px;
+			height: 18px;
+			flex: 0 0 18px;
+			fill: var(--clr-accentD);
+			transition: all 0.1s;
+		}
+	}
+
+	&__search{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: var(--clr-block);
+		opacity: 0;
+		visibility: hidden;
+		transition: all .2s;
+
+		&.open{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

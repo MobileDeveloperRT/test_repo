@@ -1,0 +1,67 @@
+
+/* =================================================================== */
+/* graph-info
+/* =================================================================== */
+
+.graph-info{
+	font-family: $osans;
+	position: relative;
+	display: flex;
+	padding: 0;
+	margin: 0 0 0 10px;
+	white-space: nowrap;
+	flex: 0 0 auto;
+	background: transparent;
+	z-index: 5;
+	transition: all .1s;
+	border: 1px solid var(--clr-separator);
+	border-radius: var(--border-radius);
+	height: var(--bar-height);
+	background: var(--clr-block);
+
+	&:hover{
+
+	}
+	
+	&__item{
+		display: flex;
+		align-items: center;
+		height: 100%;
+		position: relative;
+		padding: 5px 5px;
+		margin: 0 0 0 1px;
+		border-left: 1px solid var(--clr-separator);
+
+		&:first-child{
+			border: none;
+		}
+
+		&.inline{
+			display: flex;
+
+			.gbar-info__nums{
+				margin: 2px 0 0 3px;
+			}
+		}
+
+		&.no-padding{
+			padding: 0;
+		}
+	}
+	
+	&__title{
+		font-size: 12px;
+		color: var(--clr-important);
+		line-height: 1.2;
+		padding: 0;
+		margin: 0;
+	}
+	
+	&__nums{
+		font-size: 12px;
+		line-height: 1;
+		color: var(--clr-important);
+		padding: 0;
+		margin: 0 ;
+	}
+}
